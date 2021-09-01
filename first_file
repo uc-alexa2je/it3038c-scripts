@@ -1,0 +1,8 @@
+git init
+git remote add origin https://github.com/uc-alexa2je/it3038c-scripts.git
+git config --global user.email "uc-alexa2je@mail.uc.edu"
+git config --global user.name "uc-alexa2je"
+git add
+git commit -m'first commit'
+git checkout -M main
+git puch origin main
