@@ -23,57 +23,55 @@ def start():
     else:
         start()
     
-    def calculator():
-        calculation = input("""Please enter the type of calculation you would like to perform:
-            1 for addition,
-            2 for subtraction,
-            3 for multiplication,
-            4 for division""")
+def calculator():
+    calculation = input("""Please enter the type of calculation you would like to perform:
+        1 for addition,
+        2 for subtraction,
+        3 for multiplication,
+        4 for division""")
 
-        firstChoice = float(input('Please enter a number:\n'))
-        secondChoice = float(input('Please enter your next number:\n'))
+    firstChoice = float(input('Please enter a number: '))
+    secondChoice = float(input('Please enter your next number: '))
 
-        if calculation == '1':
-            print('The numbers you entered are {} + {} '.format(firstChoice,secondChoice))
-            print(firstChoice + secondChoice)
-    
-        elif calculation == '':
-                print('The numbers you entered are {} - {} '.format(firstChoice,secondChoice))
-                print(firstChoice - secondChoice)
+    if calculation == '1':
+        print('The numbers you entered are {} + {} '.format(firstChoice,secondChoice))
+        print(firstChoice + secondChoice)
 
-        elif calculation == '3':
-                print('The numbers you entered are {} * {} '.format(firstChoice,secondChoice))
-                print(firstChoice * secondChoice)
+    elif calculation == '':
+            print('The numbers you entered are {} - {} '.format(firstChoice,secondChoice))
+            print(firstChoice - secondChoice)
 
-        elif calculation == '4':
-                print('The numbers you entered are {} / {} '.format(firstChoice,secondChoice))
-                print(firstChoice / secondChoice)
+    elif calculation == '3':
+            print('The numbers you entered are {} * {} '.format(firstChoice,secondChoice))
+            print(firstChoice * secondChoice)
 
-        else:
-                print("You have not entered a valid operator, please try again. ")
+    elif calculation == '4':
+            print('The numbers you entered are {} / {} '.format(firstChoice,secondChoice))
+            print(firstChoice / secondChoice)
 
+    else:
+            print("You have not entered a valid operator, please try again. ")
+
+    go_again()
+
+def go_again():
+
+    #get user input
+    another_calculation=input("Do you want to make another calculaion?  Enter Y or N ")
+
+    if another_calculation == "Y":
+        calculator()
+
+    elif another_calculation == "y":
+        calculator()
+
+    elif another_calculation == "N":
+        print("Have a nice day!")
+
+    elif another_calculation == "n":
+        print("Have a nice day!")
+
+    else:
         go_again()
-
-    def go_again():
-
-        #get user input
-        another_calculation=input("Do you want to make another calculaion?  Enter Y or N ")
-
-        if another_calculation == "Y":
-            calculator()
-
-        elif another_calculation == "y":
-            calculator()
-
-        elif another_calculation == "N":
-            print("Have a nice day!")
-
-        elif another_calculation == "n":
-            print("Have a nice day!")
-
-        else:
-            go_again()
-
-    calculator()
 
 start()
