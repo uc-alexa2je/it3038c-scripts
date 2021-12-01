@@ -1,3 +1,4 @@
+
 import wxPython as plt 
 
 x = [24, 25, 26]
