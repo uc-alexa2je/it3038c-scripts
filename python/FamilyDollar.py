@@ -7,11 +7,11 @@ soup = BeautifulSoup(data,'html.parser')
 ##details = soup.findAll("div",{"class":re.compile('(total-wrapper)')})
 details = soup.find("h1")
 
-thusspan = ""
+subjectspan = ""
 
 for d in details:
     title = d.find("span")
     if title is not None and title != -1:
-        thusspan = title
+        subjectspan = title
 
-print("Product %s price is %s "% (thusspan.get('data-name'), thusspan.get('data-price')))
+print("The %s price is listed at %s. "% (subjectspan.get('data-name'), subjectspan.get('data-price')))
