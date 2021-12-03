@@ -1,0 +1,17 @@
+# Project 2
+
+For project 2 I used the Lab 6 and updated the webserver by adding another HTML page using Node.js.  This was pushed to my Github repo and made public for anyone to view.
+
+This code is run with Node.js and must be installed on your system with a current version to work properly.  After loading the Node.js repo, you can check for the current version with the following code.
+
+```node --version```
+Also, this has to be ran in powershell or the terminal
+
+My code in located in the C:\it3038c-scripts\Node\Server.js file.  Navigate here and run the following code to turn on the server...
+```PS C:\it3038c-scripts\Node> node Server.js```
+
+This will turn the server on and put it in 'listening' mode.  A message will apprear stating the server in listening on port 3000.
+
+Once here you can open a web browser and enter 'localhost:3000/sysinfo' in the address bar and the index.html page will appear.
+There you will find a link that will take you to my Git repository with the uploaded script.  
+
