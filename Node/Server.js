@@ -79,12 +79,30 @@ var server = http.createServer(function(req,res){
             <p>Number of CPUs: ${no_of_cores}</p>
             </body>
         </html>
-        
-        
         `
+
+
         res.writeHead(200, {"Content-Type" : "text/html"});
         res.end(html);
     }
+    else if(req.url.match("/syscode")){
+        html=`
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <title>Node JS System Code </title>
+                </head>
+                <body>
+                <a href="https://github.com/uc-alexa2je/it3038c-scripts/tree/main/project2/syscode">Click here to open System code on</a>
+                </body>
+            </head>
+        </html>
+        `
+        res.writeHead(200, {"Content-Type" : "text/html"});
+        res.end(html);
+
+    }
+
     else{
         res.writeHead(404,{"Content-Type" : "text/html"});
         res.end(`404 file not found at ${req.url}`);
