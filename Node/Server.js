@@ -93,7 +93,7 @@ var server = http.createServer(function(req,res){
                 <title>Node JS System Code </title>
                 </head>
                 <body>
-                <a href="https://github.com/uc-alexa2je/it3038c-scripts/tree/main/project2/syscode">Click here to open System code on</a>
+                <a href="https://github.com/uc-alexa2je/it3038c-scripts/tree/main/Node/project2/code/public">Click here to open System code on</a>
                 </body>
             </head>
         </html>
