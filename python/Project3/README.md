@@ -21,3 +21,5 @@ properTimeLength(timeOfAlarm):
 Once the time is entered correctly, the alarm time is ran in a nested loop to compare the actual time and when all entries match up, the message 'Good Morning Sunshine!' appears.  I could not get the wav soundbite to play the music but I did include the path with for those who do have to proper media players able to play it.  This is also preceded with a message stating you alarm will ring in 6 seconds if you have the correct media player installed.
 
 Otherwise, it will throw a code and end.  
+
+Although I have change some variables and the structure a little, this is a borrowed program.
